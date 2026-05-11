@@ -1,6 +1,6 @@
 import customtkinter as ctk
 import project_delta
-import threading # 🌟 YENİ EKLENDİ
+import threading 
 from datetime import datetime
 try:
     from zoneinfo import ZoneInfo
@@ -12,7 +12,7 @@ class AnaEkranFrame(ctk.CTkFrame):
         super().__init__(master, corner_radius=15, fg_color="#000000", **kwargs)
         self.grid_columnconfigure(0, weight=1)
 
-        # --- 🕒 AMERİKA EYALET SAATİ ---
+        # ---  AMERİKA EYALET SAATİ ---
         self.saat_karti = ctk.CTkFrame(self, fg_color="#1c1c1e", corner_radius=20)
         self.saat_karti.pack(pady=(40, 20), padx=50, fill="x")
 
@@ -34,12 +34,12 @@ class AnaEkranFrame(ctk.CTkFrame):
         self.eyalet_saati_label = ctk.CTkLabel(self.saat_karti, text="--:--", font=("Segoe UI", 56, "bold"), text_color="#ffd60a")
         self.eyalet_saati_label.pack(pady=(5, 15))
 
-        # --- ✈️ GERİ SAYIM ---
+        # ---  GERİ SAYIM ---
         ctk.CTkLabel(self, text="YOLCULUĞA KALAN SÜRE", font=("Segoe UI", 20, "bold"), text_color="#8e8e93").pack(pady=(40, 10))
         self.zaman = ctk.CTkLabel(self, text="Hesaplanıyor...", font=("Segoe UI", 42, "bold"), text_color="#0a84ff")
         self.zaman.pack(pady=10)
 
-        # --- 💵 DOLAR KURU ---
+        # ---  DOLAR KURU ---
         self.kur_karti = ctk.CTkFrame(self, fg_color="#1c1c1e", corner_radius=20)
         self.kur_karti.pack(pady=30, padx=100, fill="x")
         ctk.CTkLabel(self.kur_karti, text="GÜNCEL DOLAR KURU", font=("Segoe UI", 16, "bold"), text_color="#8e8e93").pack(pady=(15, 0))
@@ -57,7 +57,7 @@ class AnaEkranFrame(ctk.CTkFrame):
         except Exception as e:
             self.eyalet_saati_label.configure(text="Hata")
 
-    # 🌟 OPTİMİZASYON: Dolar kurunu arayüzü dondurmadan arka planda çeker
+    # OPTİMİZASYON: Dolar kurunu arayüzü dondurmadan arka planda çeker
     def dolar_kuru_getir_arka_plan(self):
         kur_degeri = project_delta.dolar_kuru_cek()
         # Veri gelince arayüzü günceller (.after komutu arayüzün çökmesini engeller)
