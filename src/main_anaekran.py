@@ -57,7 +57,7 @@ class AnaEkranFrame(ctk.CTkFrame):
         except Exception as e:
             self.eyalet_saati_label.configure(text="Hata")
 
-    # OPTİMİZASYON: Dolar kurunu arayüzü dondurmadan arka planda çeker
+    
     def dolar_kuru_getir_arka_plan(self):
         kur_degeri = project_delta.dolar_kuru_cek()
         # Veri gelince arayüzü günceller (.after komutu arayüzün çökmesini engeller)
@@ -67,7 +67,7 @@ class AnaEkranFrame(ctk.CTkFrame):
         self.saat_guncelle()
         self.zaman.configure(text=project_delta.kalan_zamani_hesapla("2026-06-13 10:00:00"))
         
-        # Dolar kurunu dondurmadan ayrı bir işçi (thread) ile başlat
+        
         threading.Thread(target=self.dolar_kuru_getir_arka_plan, daemon=True).start()
         
         self.after(60000, self.donguyu_baslat)
