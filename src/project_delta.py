@@ -9,10 +9,10 @@ import re
 import os
 from dotenv import load_dotenv
 
-# 🌟 GÜVENLİK DUVARI: .env dosyasındaki şifreleri sisteme yükler
+
 load_dotenv()
 
-# --- 🔑 API AYARLARI (GİZLENDİ) ---
+# ---  API AYARLARI  ---
 GROQ_API_KEY = os.getenv("GROQ_API_KEY") 
 SERPAPI_KEY = os.getenv("SERPAPI_KEY")
 
@@ -21,8 +21,7 @@ try:
 except:
     client = None
 
-# --- 📂 VERİTABANI (CACHE) SİSTEMİ ---
-# İsmi daha profesyonel bir formata çevrildi
+# ---  VERİTABANI (CACHE) SİSTEMİ ---
 DB_DOSYASI = "app_data_cache.json"
 
 def db_oku(anahtar):
