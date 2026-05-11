@@ -5,7 +5,7 @@ import requests
 from io import BytesIO
 import webbrowser
 import project_delta
-import threading # 🌟 YENİ EKLENDİ
+import threading 
 
 class HaritaFrame(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
@@ -87,7 +87,7 @@ class HaritaFrame(ctk.CTkFrame):
         for w in self.biletler.winfo_children(): w.destroy()
         ctk.CTkLabel(self.biletler, text="Biletler aranıyor... 🛫", font=("Segoe UI", 14), text_color="#8e8e93").pack(pady=10)
         
-        # 🌟 OPTİMİZASYON: Zorlu işlemleri arka plana at
+        # OPTİMİZASYON: Zorlu işlemleri arka plana at
         threading.Thread(target=self.arka_plan_verileri_topla, args=(sehir,), daemon=True).start()
 
     def arka_plan_verileri_topla(self, sehir):
