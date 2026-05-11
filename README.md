@@ -42,14 +42,17 @@ git clone https://github.com/Maelor1/Work-and-Travel-AI-Assistant.git
 cd Work-and-Travel-AI-Assistant
 
 **2.Install Dependencies**
+```bash
 pip install -r requirements.txt
 
 **3. API Keys**
+```bash
 For security reasons, API keys are not included in this repository. Create a .env file in the root directory and add your own keys:
 GROQ_API_KEY=your_groq_api_key_here
 SERPAPI_KEY=your_serpapi_key_here
 
 **4. Run the application**
+```bash
 python src/main_app.py
 ```
 
