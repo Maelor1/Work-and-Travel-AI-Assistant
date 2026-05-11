@@ -20,10 +20,10 @@ Instead of navigating between a dozen different apps for maps, flights, budget p
 
 ## 📸 Screenshots
 
-`![Map & Flights](images/map_screen.png)`
+![Map & Flights](images/map_screen.png)
 
 
-`![AI Guide](images/ai_guide_screen.png)`
+![AI Guide](images/ai_guide_screen.png)
 
 ## 🛠️ Tech Stack & Architecture
 
