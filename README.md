@@ -48,8 +48,8 @@ pip install -r requirements.txt
 ```
 
 **3. API Keys**
-```bash
 For security reasons, API keys are not included in this repository. Create a .env file in the root directory and add your own keys:
+```bash
 GROQ_API_KEY=your_groq_api_key_here
 SERPAPI_KEY=your_serpapi_key_here
 ```
