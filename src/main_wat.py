@@ -38,7 +38,6 @@ class WatFrame(ctk.CTkFrame):
         # Kullanıcıya beklediğini gösteren animasyonlu yazı
         ctk.CTkLabel(self.icerik, text="Yapay Zeka Rehberi Hazırlıyor... ⏳", font=("Segoe UI", 20), text_color="#0a84ff").pack(pady=50)
         
-        # 🌟 OPTİMİZASYON: Arka plan işçisini başlat
         threading.Thread(target=self.arka_planda_veri_cek, args=(sehir,), daemon=True).start()
 
     def arka_planda_veri_cek(self, sehir):
