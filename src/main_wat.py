@@ -4,7 +4,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 import project_delta
-import threading # 🌟 YENİ EKLENDİ
+import threading 
 
 class WatFrame(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
