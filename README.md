@@ -37,7 +37,7 @@ Instead of navigating between a dozen different apps for maps, flights, budget p
 ## ⚙️ Installation & Setup
 
 **1. Clone the repository**
-```bash
+
 git clone [https://github.com/yourusername/Malis-Journey-AI.git](https://github.com/yourusername/Malis-Journey-AI.git)
 cd Malis-Journey-AI
 
