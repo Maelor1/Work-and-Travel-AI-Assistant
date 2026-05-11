@@ -37,9 +37,9 @@ Instead of navigating between a dozen different apps for maps, flights, budget p
 ## ⚙️ Installation & Setup
 
 **1. Clone the repository**
-
-[git clone [https://github.com/yourusername/Malis-Journey-AI.git](https://github.com/yourusername/Malis-Journey-AI.git)
-cd Malis-Journey-AI](https://github.com/Maelor1/Work-and-Travel-AI-Assistant.git)
+```bash
+git clone https://github.com/Maelor1/Work-and-Travel-AI-Assistant.git
+cd Work-and-Travel-AI-Assistant
 
 **2.Install Dependencies**
 pip install -r requirements.txt
@@ -51,6 +51,8 @@ SERPAPI_KEY=your_serpapi_key_here
 
 **4. Run the application**
 python src/main_app.py
+```
+
 
 
 🧠 Why I Built This
