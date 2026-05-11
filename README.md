@@ -38,8 +38,8 @@ Instead of navigating between a dozen different apps for maps, flights, budget p
 
 **1. Clone the repository**
 
-git clone [https://github.com/yourusername/Malis-Journey-AI.git](https://github.com/yourusername/Malis-Journey-AI.git)
-cd Malis-Journey-AI
+[git clone [https://github.com/yourusername/Malis-Journey-AI.git](https://github.com/yourusername/Malis-Journey-AI.git)
+cd Malis-Journey-AI](https://github.com/Maelor1/Work-and-Travel-AI-Assistant.git)
 
 **2.Install Dependencies**
 pip install -r requirements.txt
@@ -61,4 +61,4 @@ Mehmet Ali Ordu
 
 * LinkedIn: [Mehmet Ali Ordu](https://tr.linkedin.com/in/mehmet-ali-ordu-41a046244)
 
-* GitHub: @Maelor1
+* GitHub: [@Maelor1](https://github.com/Maelor1)
