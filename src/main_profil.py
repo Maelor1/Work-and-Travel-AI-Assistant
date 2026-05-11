@@ -17,7 +17,7 @@ class ProfilFrame(ctk.CTkFrame):
         net_para = project_delta.db_oku("beklenen_net_kazanc") or 0
         ctk.CTkLabel(ust_kart, text=f"${net_para:,.0f}", font=("Segoe UI", 48, "bold"), text_color="#30d158").pack()
 
-        # --- ÇALIŞMA YERLERİM (OKUNUR & DÜZENLENEBİLİR TASARIM) ---
+        # --- ÇALIŞMA YERLERİM  ---
         is_frame = ctk.CTkFrame(self.scroll, fg_color="#1c1c1e", corner_radius=25)
         is_frame.pack(fill="x", pady=10, ipady=15)
         ctk.CTkLabel(is_frame, text="🏢 Çalışma Yerlerim", font=("Segoe UI", 20, "bold"), text_color="#0a84ff").pack(anchor="w", padx=25, pady=10)
