@@ -62,7 +62,7 @@ python src/main_app.py
 
 
 🧠 Why I Built This
-I developed this project to solve a personal pain point while planning my own Work & Travel journey to Icona Avalon, NJ. It serves as a practical application of integrating Large Language Models (LLMs) into traditional software architecture, utilizing asynchronous programming, and designing user-centric interfaces.
+I developed this project to solve a personal pain point while planning my own Work & Travel journey to United States. It serves as a practical application of integrating Large Language Models (LLMs) into traditional software architecture, utilizing asynchronous programming, and designing user-centric interfaces.
 
 👨‍💻 Author
 Mehmet Ali Ordu
